@@ -15,8 +15,12 @@ super + F2
 	rider
 
 #Inkscape
+#super + F3
+#    alacritty 'ssh -X -i ~/Dokumente/RSA-Keypair.pem ubuntu@ec2-52-59-214-135.eu-central-1.compute.amazonaws.com'
+
+#Spotify
 super + F3
-    inkscape
+    spotify
 
 #Gimp
 super + F4
@@ -42,9 +46,7 @@ super + F8
 super + F9
     evolution
 
-#Spotify
-super + F10
-    spotify
+
 
 #Rofi Fullscreen
 super + F11
@@ -62,9 +64,13 @@ super + F12
 super + e
     atom
 
+#Flameshot GUI
+super + super + s
+	flameshot 'gui'
+
 #Browser
 super + q
-    firefox
+    chromium
 
 #Conky-toggle
 super + c
@@ -127,7 +133,8 @@ super + shift + c
 
 #dmenu
 super + r
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	rofi -show drun	
+#dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 #reload sxhkd:
 super + shift + s
